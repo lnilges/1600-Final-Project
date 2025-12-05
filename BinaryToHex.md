@@ -1,10 +1,17 @@
 [Home](README.md) | [Back](BinaryToDecminal.md) | [Next](BinaryToOctal.md)
 
-# Binary to Hexadecimal Conversion
+## Binary to Hexadecimal Conversion
 
-To convert from a binary value into a hexadecimal value, group the binary number into groups of four digits. This is done because binary is base-2 while hexadecimal is base-16. Once they are in groups of four, convert each into binary. Since there are only four numbers in the group, use the formula - D = (n * 8) + (n * 4) + (n * 2) + (n * 1). If the number is 1-9, then that is the hexadecimal character for that group. If the number is 10-15 then the character is A-F.
+Each hexadecimal digit represents 4 binary numbers. This makes it easy to convert between binary and hexadecimal. 
 
-This table can be used for faster conversions:
+Instructions:
+1. Group the binary number into 4-bit groups, starting from the right side.
+2. If the last group has less than 4 bits, add 0s to the front to get 4 bits
+3. Convert each group into its decimal value using D = (n * 2<sup>3</sup>) + (n * 2<sup>2</sup>) + (n * 2<sup>1</sup>) + (n * 2<sup>0</sup>)
+4. Convert each decimal value to hexadecimal: 0-9 = 0-9, 10-15 = A - F
+
+
+Quick Reference Table:
 | Binary | Decimal | Hexadecimal|
 | ------- | ------ | ------|
 | 0000 | 0 | 0 |
@@ -26,44 +33,40 @@ This table can be used for faster conversions:
 
 ### Examples:
 
->Binary: 11101000\
->Split: 1110 1000\
->Convert to decimal:\
->1110 = (1 * 8) + (1 * 4) + (1 * 2) + (1 * 1) = 14\
->1000 = (1 * 8) + (0 * 4) + (0 * 2) + (0 * 1) = 8\
->Convert to hexadecimal: E8
+- Binary: 11101000
+- Split: 1110 1000
+- 1110 = (1 * 2<sup>3</sup>) + (1 * 2<sup>2</sup>) + (1 * 2<sup>1</sup>) + (0 * 2<sup>0</sup>) = 14
+- 1000 = (1 * 2<sup>3</sup>) + (0 * 2<sup>2</sup>) + (0 * 2<sup>1</sup>) + (0 * 2<sup>0</sup>) = 8
+- Hexadecimal Value: E8
+--- 
+- Binary: 1110101101101
+- Split: 0001 1101 0110 1101
+- 0001 = (0 * 2<sup>3</sup>) + (0 * 2<sup>2</sup>) + (0 * 2<sup>1</sup>) + (1 * 2<sup>0</sup>) = 1
+- 1101 = (1 * 2<sup>3</sup>) + (1 * 2<sup>2</sup>) + (0 * 2<sup>1</sup>) + (1 * 2<sup>0</sup>) = 13
+- 0110 = (0 * 2<sup>3</sup>) + (1 * 2<sup>2</sup>) + (1 * 2<sup>1</sup>) + (0 * 2<sup>0</sup>) = 6
+- 1101 = (1 * 2<sup>3</sup>) + (1 * 2<sup>2</sup>) + (0 * 2<sup>1</sup>) + (1 * 2<sup>0</sup>) = 13
+- Hexadecimal Value: 1D6D
 
->Binary: 1110101101101\
->Split: 0001 1101 0110 1101\
->Convert to decimal:\
->0001 = (0 * 8) + (0 * 4) + (0 * 2) + (1 * 1) = 1\
->1101 = (1 * 8) + (1 * 4) + (0 * 2) + (1 * 1) = 13\
->0110 = (0 * 8) + (1 * 4) + (1 * 2) (0 * 1) = 6\
->1101 = (1 * 8) + (1 * 4) + (0 * 2) + (1 * 1) = 13\
->Convert to hexadecimal: 1D6D
+## Hexadecimal to Binary Conversion
 
-### Hexadecimal to Binary Conversion
-
-To convert from hexadecimal to binary, you must first convert each character to a decimal value. Then convert each decimal value to a binary as discussed in the [binary to decimal page](BinaryToDecminal.md).
+Instructions:
+1. Separate each character in the hexadecimal
+2. Convert each character into a decimal value
+3. Convert the decimal values into 4-bit binary values
+4. Put the 4-bit values together to get the binary value
 
 ### Examples
 
->Hexadecimal: B7C2\
->Convert each character into a decimal value:\
->B = 11, 7 = 7, C = 12, 2 = 2\
->Then convert each into binary using table:\
->11 = 1011\
->7 = 0111\
->12 = 1100\
->2 = 0010\
->Binary Value: 1011011111000010
-
->Hexadecimal: AF3C\
->Convert to decimal values:\
->A = 10, F = 15, 3 = 3, C = 12\
->Then convert each into binary using table:\
->10 = 0101\
->15 = 1111\
->3 = 0011\
->12 = 1100\
-Binary Value: 0101111100111100
+- Hexadecimal: B7C2
+- B = 11 = 1011
+- 7 = 7 = 0111
+- C = 12 = 1100
+- 2 = 2 = 0010
+- Binary Value: 1011011111000010
+---
+- Hexadecimal: AF3C
+- A = 10 = 1010 
+- F = 15 = 1111
+- 3 = 3 = 0011
+- C = 12 = 1100
+- Binary Value: 0101111100111100

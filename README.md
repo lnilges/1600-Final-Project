@@ -2,8 +2,8 @@
 
 ### **Title:** Binary Number Conversions Tutorial
 ### **Author:** Lani Nilges
-### **Summary:** The purpose of this tutorial is to learn how to perform binary number conversion and its importance
-### **Target Audience:** Students or individuals who want to learn more about binary number conversion and basic information technology concepts. 
+### **Summary:** This tutorial explains what binary numbers are, their importance, how to convert binary to other number systems, and how to perform binary math operations. 
+### **Target Audience:** Students or individuals who want to learn more about binary numbers, conversion, and math operations. 
 
 
 ### Table of Contents
