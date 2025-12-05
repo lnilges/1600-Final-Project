@@ -1,4 +1,4 @@
-[Home](README.md) | [Back](BinaryToDecminal.md) | [Next](BinaryToOctal.md)
+[Home](README.md) | [Back](BinaryToDecimal.md) | [Next](BinaryToOctal.md)
 
 ## Binary to Hexadecimal Conversion
 
