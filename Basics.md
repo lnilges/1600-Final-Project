@@ -1,4 +1,4 @@
-[Home](README.md) | [Next](BinaryToDecminal.md)
+[Home](README.md) | [Next](BinaryToDecimal.md)
 
 # Binary Basics
 
