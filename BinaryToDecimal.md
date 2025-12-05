@@ -7,7 +7,7 @@ Converting a binary to a decimal number is done by multiplying each digit of the
 Instructions:
 1. Write out the binary number
 2. Label each digit with its power of 2
-3. Multiple each bit (0 or 1) by its power of 2
+3. Multiply each bit (0 or 1) by its power of 2
 4. Add the results
 
 **Formula:** D = (n * 2<sup>7</sup>) + (n * 2<sup>6</sup>) + (n * 2<sup>5</sup>) + (n * 2<sup>4</sup>) + (n * 2<sup>3</sup>) + (n * 2<sup>2</sup>) + (n * 2<sup>1</sup>) + (n * 2<sup>0</sup>)
@@ -45,7 +45,7 @@ Instructions:
 - 39 / 2 = 19, remainder 1
 - 19 / 2 = 9, remainder 1
 - 9 / 2 = 4, remainder 1
-- 4 / 2 = 2, reainder 0
+- 4 / 2 = 2, remainder 0
 - 2 / 2 = 1 remainder 0
 - 1 / 2 = 0, remainder 1
 - Binary Value = 10011100

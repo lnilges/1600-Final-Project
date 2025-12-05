@@ -2,7 +2,7 @@
 
 ## Binary to Hexadecimal Conversion
 
-Each hexadecimal digit represents 4 binary numbers. This makes it easy to convert between binary and hexadecimal. 
+Each hexadecimal digit represents 4 binary digits. This makes it easy to convert between binary and hexadecimal. 
 
 Instructions:
 1. Group the binary number into 4-bit groups, starting from the right side.

@@ -6,9 +6,9 @@
 ### **Target Audience:** Students or individuals who want to learn more about binary numbers, conversion, and math operations. 
 
 
-### Table of Contents
+## Table of Contents
 - [Binary Basics](Basics.md)
-- [Binary to Decimal Conversion](BinaryToDecminal.md)
+- [Binary to Decimal Conversion](BinaryToDecimal.md)
 - [Binary to Hexadecimal Conversion](BinaryToHex.md)
 - [Binary to Octal Conversion](BinaryToOctal.md)
-- [Binary Math](BinaryMath.md)
+- [Binary Math Operations](BinaryMath.md)
